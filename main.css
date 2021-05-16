@@ -1,14 +1,44 @@
-body {
-    font-family: 'Goldman', cursive;
-}
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Inconsolata', monospace;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+    text-align: center;
+    border: #FFD700 2px solid;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width:600px) {
+    .column {
+      width: 100%;
+    }
+  }
 
-.container {
+
+
+/* .container {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.box {
+.boxes {
     width: 300px;
     height: 400px;
     min-width: 300px;
@@ -21,10 +51,22 @@ body {
 
 }
 
-.box-content {
-    position: absolute;
+.box1 {
+    position: relative;
 
 }
+
+.lily {
+    position: absolute;
+    top: 3.5em;
+    font-size: 3em;
+}
+
+.fred {
+    position: absolute;
+    top: 3.5em;
+    font-size: 3em;
+} */
 
 footer {
     text-align: center;
@@ -34,7 +76,7 @@ footer {
 h1 {
     text-align: center;
     font-size: 5em;
-    color: gold;
+    color: #FFD700;
 }
 
 .chartContainer {
